@@ -1,0 +1,16 @@
+<md-toolbar color="primary">
+  {{title}}
+  <md-select placeholder="Choose a service" name="services" [(ngModel)]="serviceSelected">
+    <md-option *ngFor="let s of services" [value]="s">{{ s.name }}</md-option>
+  </md-select>
+  <button md-fab (click)="addDevice()"><md-icon>add</md-icon></button>
+</md-toolbar>
+<md-card *ngFor="let device of devices">
+  <md-card-title>
+    {{device.name}}
+  </md-card-title>
+  <md-card-content>
+    <md-slider min="0" max="100000" [value]="device.value"></md-slider>
+    <span>{{device.value}}</span>
+  </md-card-content>
+</md-card>
