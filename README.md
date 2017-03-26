@@ -1,5 +1,7 @@
 # Ng2Ble
 
+Las diapositivas de este proyecto se encuentran [aqui](https://es.slideshare.net/scyrizales/angular-of-things-angular2-web-bluetooth).
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
 
 ## Development server
